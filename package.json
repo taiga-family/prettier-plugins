@@ -3,7 +3,8 @@
   "version": "0.1.0-beta",
   "description": "",
   "scripts": {
-    "test": "tsc --noEmit && node --loader tsx --test test/fixtures.spec.ts"
+    "test": "tsc --noEmit && node --loader tsx --test test/fixtures.spec.ts",
+    "build": "tsc"
   },
   "type": "module",
   "author": "Svyatoslav Zaytsev <sviatsv@yandex.ru>",
@@ -33,6 +34,9 @@
   },
   "types": "./dist/src/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README-ru.md",
+    "README.md",
+    "images"
   ]
 }
