@@ -4,8 +4,5 @@
   ],
   "parserOptions": {
     "project": ["./tsconfig.json", "./tsconfig.test.json"]
-  },
-  "rules": {
-    "@taiga-ui/experience/no-simple-for-of": "off"
   }
 }

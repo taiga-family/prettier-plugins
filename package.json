@@ -12,7 +12,7 @@
   "author": "Svyatoslav Zaytsev <sviatsv@yandex.ru>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@taiga-ui/eslint-plugin-experience": "^0.67.3",
+    "@taiga-ui/eslint-plugin-experience": "^0.67.10",
     "@types/node": "^20.11.29",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
