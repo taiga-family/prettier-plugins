@@ -3,14 +3,20 @@
   "version": "0.1.0-beta",
   "description": "",
   "scripts": {
-    "test": "tsc --noEmit && node --loader tsx --test test/fixtures.spec.ts",
-    "build": "tsc"
+    "test": "tsc --noEmit && node --import tsx --test test/fixtures.spec.ts",
+    "lint": "eslint . --fix",
+    "build": "tsc",
+    "prepare": "husky"
   },
   "type": "module",
   "author": "Svyatoslav Zaytsev <sviatsv@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
+    "@taiga-ui/eslint-plugin-experience": "^0.67.3",
     "@types/node": "^20.11.29",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"

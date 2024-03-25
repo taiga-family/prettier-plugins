@@ -1,7 +1,8 @@
-import {Plugin} from 'prettier';
+import type { Plugin } from 'prettier';
 import babelParsers from 'prettier/parser-babel';
 import typescriptParsers from 'prettier/parser-typescript';
-import printers from "./printers.js";
+
+import printers from './printers.js';
 
 export default {
     parsers: {

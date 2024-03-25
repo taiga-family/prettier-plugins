@@ -1,7 +1,12 @@
-import {AstPath} from "prettier";
+import type { AstPath } from 'prettier';
 
-const ignoredParents = new Set(['ImportDeclaration', 'ImportAttribute', 'ExportAllDeclaration', 'ExportNamedDeclaration']);
+const ignoredParents = new Set([
+    'ImportDeclaration',
+    'ImportAttribute',
+    'ExportAllDeclaration',
+    'ExportNamedDeclaration',
+]);
 
-export default function (path: AstPath<any>): boolean {
+export default function (path: AstPath): boolean {
     return ignoredParents.has(path.parent?.type);
 }
