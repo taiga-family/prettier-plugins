@@ -1,0 +1,82 @@
+name: '🐞 - Bug Report'
+title: '🐞 - '
+description: Report a bug in the Maskito
+labels: ['bug']
+
+body:
+  - type: dropdown
+    id: affected-packages
+    attributes:
+      label: Which package(s) are the source of the bug?
+      options:
+        - '@maskito/core'
+        - '@maskito/kit'
+        - '@maskito/phone'
+        - '@maskito/angular'
+        - '@maskito/react'
+        - '@maskito/vue'
+        - Don't known / other
+      multiple: true
+    validations:
+      required: true
+
+  - type: input
+    id: playground-link
+    attributes:
+      label: Playground Link
+      description: |
+        Link to an isolated reproduction in our [StackBlitz playground](https://maskito.dev/stackblitz).
+
+        If either of the following holds true:
+        - You can't reproduce the issue in the playground
+        - Your issue requires some complex setup - such as multiple files or a specific folder structure.
+
+        So you can use any link that might help for reproduction bug: github repo, demo url, etc.
+
+        ***Help us to help you!***
+      placeholder: https://stackblitz.com/edit/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: |
+        Please provide the exception or error you saw.
+        How do you trigger this bug?
+        Please walk us through it step by step.
+        Please provide a screenshot if possible.
+    validations:
+      required: true
+
+  - type: input
+    id: maskito-version
+    attributes:
+      label: Maskito version
+      placeholder: x.y.z
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: browser-specific
+    attributes:
+      label: Which browsers have you used?
+      description: You may select more than one.
+      options:
+        - label: Chrome
+        - label: Firefox
+        - label: Safari
+        - label: Edge
+
+  - type: checkboxes
+    id: operating-systems
+    attributes:
+      label: Which operating systems have you used?
+      description: You may select more than one.
+      options:
+        - label: macOS
+        - label: Windows
+        - label: Linux
+        - label: iOS
+        - label: Android
