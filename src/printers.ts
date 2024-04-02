@@ -1,9 +1,8 @@
 import type { AstPath, Doc, ParserOptions, Printer } from 'prettier';
 import estree from 'prettier/plugins/estree';
 
+import isAllowedLiteral from './is-allowed-literal.js';
 import isDirective from './is-directive.js';
-import isImportExport from './is-import-export.js';
-import isProperty from './is-property.js';
 import printString from './print-string.js';
 
 const originalEstreePrinter = (estree as any).printers.estree;
@@ -21,7 +20,7 @@ export default {
 
             switch (node.type) {
                 case 'StringLiteral': {
-                    if (!isImportExport(path) && !isProperty(path)) {
+                    if (isAllowedLiteral(path)) {
                         return printString(node.extra.raw);
                     }
 
@@ -31,8 +30,7 @@ export default {
                     if (
                         typeof node.value === 'string' &&
                         !isDirective(path) &&
-                        !isImportExport(path) &&
-                        !isProperty(path)
+                        isAllowedLiteral(path)
                     ) {
                         return printString(node.raw);
                     }
