@@ -1,0 +1,38 @@
+{
+  "name": "prettier-plugin-backticks",
+  "version": "0.1.0-beta",
+  "description": "",
+  "scripts": {
+    "test": "tsc --noEmit && node --loader tsx --test test/fixtures.spec.ts"
+  },
+  "type": "module",
+  "author": "Svyatoslav Zaytsev <sviatsv@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "keywords": [
+    "backticks",
+    "plugin",
+    "prettier",
+    "prettier-plugin"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "module": "./dist/src/index.js",
+  "exports": {
+    "types": "./dist/src/index.d.ts",
+    "import": "./dist/src/index.js"
+  },
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
