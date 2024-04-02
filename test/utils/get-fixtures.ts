@@ -8,7 +8,6 @@ export default async function* (): AsyncGenerator<{
     content: string;
 }> {
     for (const item of await readdir(fixturesDir)) {
-        // for (const item of ['objects.js']) {
         const itemUrl = new URL(item, fixturesDir);
 
         const itemStat = await stat(itemUrl);
