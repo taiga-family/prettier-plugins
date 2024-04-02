@@ -10,7 +10,7 @@
   },
   "type": "module",
   "author": "Svyatoslav Zaytsev <sviatsv@yandex.ru>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@taiga-ui/eslint-plugin-experience": "^0.67.3",
     "@types/node": "^20.11.29",
