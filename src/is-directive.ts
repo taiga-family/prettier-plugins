@@ -1,10 +1,11 @@
-import {AstPath} from "prettier";
+import type { AstPath } from 'prettier';
 
-export default function (path: AstPath<any>): boolean {
-    if (path.key !== "expression") {
+export default function (path: AstPath): boolean {
+    if (path.key !== 'expression') {
         return;
     }
 
     const { parent } = path;
-    return parent.type === "ExpressionStatement" && parent.directive;
+
+    return parent.type === 'ExpressionStatement' && parent.directive;
 }

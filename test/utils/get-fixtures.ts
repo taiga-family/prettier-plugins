@@ -1,11 +1,14 @@
-import {URL} from "node:url";
-import {readdir, stat, readFile} from "node:fs/promises";
+import { readdir, readFile, stat } from 'node:fs/promises';
+import { URL } from 'node:url';
 
 const fixturesDir = new URL('../fixtures/', import.meta.url);
 
-export default async function * (): AsyncGenerator<{ name: string; content: string; }> {
+export default async function* (): AsyncGenerator<{
+    name: string;
+    content: string;
+}> {
     for (const item of await readdir(fixturesDir)) {
-    // for (const item of ['objects.js']) {
+        // for (const item of ['objects.js']) {
         const itemUrl = new URL(item, fixturesDir);
 
         const itemStat = await stat(itemUrl);
