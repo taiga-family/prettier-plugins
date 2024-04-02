@@ -24,16 +24,16 @@ yarn add --dev prettier
 Then, install `prettier-plugin-backticks`:
 
 ```bash
-npm install -D prettier-plugin-backticks
+npm install -D @taiga-ui/prettier-plugin-backticks
 # or
-yarn add --dev prettier-plugin-backticks
+yarn add --dev @taiga-ui/prettier-plugin-backticks
 ```
 
 Then add the plugin to your `.prettierrc` file:
 
 ```json
 {
-  "plugins": ["prettier-plugin-backticks"]
+  "plugins": ["@taiga-ui/prettier-plugin-backticks"]
 }
 ```
 
