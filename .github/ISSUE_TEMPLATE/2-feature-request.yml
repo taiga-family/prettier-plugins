@@ -1,22 +1,19 @@
 name: '🚀 - Feature Request'
 title: '🚀 - '
-description: Suggest a feature for Maskito
+description: Suggest a feature
 labels: ['feature']
 
 body:
   - type: dropdown
     id: affected-packages
     attributes:
-      label: Which package(s) are relevant/related to the feature request?
+      label: Which package(s) are the source of the bug?
       options:
-        - '@maskito/core'
-        - '@maskito/kit'
-        - '@maskito/phone'
-        - '@maskito/angular'
-        - '@maskito/react'
-        - '@maskito/vue'
-        - Don't known / other
+        - '@taiga-ui/prettier-plugin-backticks'
       multiple: true
+      default: 0
+    validations:
+      required: true
 
   - type: textarea
     id: description
