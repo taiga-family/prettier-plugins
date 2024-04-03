@@ -8,7 +8,12 @@ single or double quotes for strings in their code, ensuring a consistent style a
 
 ## Features
 
-- Converts all single and double quotes to backticks in JavaScript and TypeScript files.
+- Converts all single and double quotes to backticks (`) in JavaScript and TypeScript files, with certain exceptions:
+  1. The "use strict" expression, which is not replaced to preserve its exact syntactical significance.
+  2. Object keys, where the use of single or double quotes is necessary to maintain the names of keys that contain characters not allowed without quotes.
+  3. Strings in import statements, in order to not disrupt the syntax of modules.
+  4. (Temporary) Strings in dynamic import statements, due to some development environments incorrectly processing such imports if they are enclosed in backticks.
+  5. (Temporary) Strings in selectors for Angular components, because some development environments incorrectly handle such selectors when they are enclosed in backticks.
 
 ## Installation
 
