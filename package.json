@@ -1,6 +1,6 @@
 {
   "name": "@taiga-ui/prettier-plugin-backticks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "scripts": {
     "test": "tsc --noEmit && node --import tsx --test test/fixtures.spec.ts",

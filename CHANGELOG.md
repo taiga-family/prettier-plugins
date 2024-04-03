@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/taiga-family/prettier-plugins/compare/v1.0.2...v1.0.3) (2024-04-03)
+
+
+### Bug Fixes
+
+* **backticks:** fix dynamic type imports ([5916cba](https://github.com/taiga-family/prettier-plugins/commit/5916cba2cf316ad8a581ce95b2fb9e2b03bde538)), closes [#13](https://github.com/taiga-family/prettier-plugins/issues/13)
+
 ### [1.0.2](https://github.com/taiga-family/prettier-plugins/compare/v1.0.1...v1.0.2) (2024-04-03)
 
 
