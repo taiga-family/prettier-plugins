@@ -1,0 +1,5 @@
+type A = typeof import("a");
+type B = typeof import("b");
+
+import type C from "c";
+import { type D } from "d";
