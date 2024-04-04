@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/taiga-family/prettier-plugins/compare/v1.0.3...v1.1.0) (2024-04-04)
+
+
+### Bug Fixes
+
+* **backticks:** add compatibility with @trivago/prettier-plugin-sort-imports ([be4ed7e](https://github.com/taiga-family/prettier-plugins/commit/be4ed7e9589f0f2b417c6d374c3f1283bc933c7b)), closes [#16](https://github.com/taiga-family/prettier-plugins/issues/16)
+
 ### [1.0.3](https://github.com/taiga-family/prettier-plugins/compare/v1.0.2...v1.0.3) (2024-04-03)
 
 
