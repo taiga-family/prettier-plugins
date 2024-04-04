@@ -52,3 +52,7 @@ npx prettier --write .
 # or
 yarn prettier --write .
 ```
+
+## Compatible plugins
+
+* `@trivago/prettier-plugin-sort-imports`

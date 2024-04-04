@@ -6,7 +6,8 @@
     "rootDir": ".",
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "lib": ["ES2023"]
   },
   "files": [
     "src/index.ts"
