@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/taiga-family/prettier-plugins/compare/v1.1.0...v1.1.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* **backticks:** fix require ([0f20dc2](https://github.com/taiga-family/prettier-plugins/commit/0f20dc2d86f3e62200fab272e2dc65f185c819e9)), closes [#19](https://github.com/taiga-family/prettier-plugins/issues/19)
+* **backticks:** fix TSModuleDeclaration ([ae5ab07](https://github.com/taiga-family/prettier-plugins/commit/ae5ab079aaccb5f566658bb23d5799b9b7ecbc3b)), closes [#20](https://github.com/taiga-family/prettier-plugins/issues/20)
+
 ## [1.1.0](https://github.com/taiga-family/prettier-plugins/compare/v1.0.3...v1.1.0) (2024-04-04)
 
 
