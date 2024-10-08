@@ -1,10 +1,10 @@
 import type { AstPath } from 'prettier';
 
 const ignoredParents = new Set([
-    'ImportDeclaration',
-    'ImportAttribute',
     'ExportAllDeclaration',
     'ExportNamedDeclaration',
+    'ImportAttribute',
+    'ImportDeclaration',
 ]);
 
 export default function (path: AstPath): boolean {

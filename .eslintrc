@@ -4,5 +4,10 @@
   ],
   "parserOptions": {
     "project": ["./tsconfig.json", "./tsconfig.test.json"]
+  },
+  "rules": {
+    "sonarjs/sonar-no-fallthrough": "off",
+    "import/no-useless-path-segments": "off",
+    "react/display-name": "off"
   }
 }

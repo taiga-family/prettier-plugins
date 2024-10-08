@@ -13,7 +13,7 @@ export default {
             preprocess: (text, options) => {
                 const parentParser = getParentParser(options);
 
-                return parentParser?.preprocess(text, options) ?? text;
+                return parentParser?.preprocess?.(text, options) ?? text;
             },
         },
         typescript: {
