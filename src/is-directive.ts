@@ -2,7 +2,7 @@ import type { AstPath } from 'prettier';
 
 export default function (path: AstPath): boolean {
     if (path.key !== 'expression') {
-        return;
+        return false;
     }
 
     const { parent } = path;

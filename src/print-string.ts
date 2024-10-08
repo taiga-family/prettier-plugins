@@ -1,6 +1,6 @@
 export default function (raw: string): string {
     if (/^`.*`$/.test(raw)) {
-        return;
+        return raw;
     }
 
     const [quote] = raw;

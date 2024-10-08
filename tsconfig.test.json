@@ -6,7 +6,8 @@
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "declaration": true,
-    "noEmit": true
+    "noEmit": true,
+    "strict": true
   },
   "include": [
     "test/**/*.ts"

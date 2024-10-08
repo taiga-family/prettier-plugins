@@ -3,7 +3,7 @@ import type { Parser, ParserOptions } from 'prettier';
 import { assertPlugins } from './assert-plugins.js';
 import getCurrentPluginIndex from './get-current-plugin-index.js';
 
-export default function ({ parser, plugins }: ParserOptions): Parser {
+export default function ({ parser, plugins }: ParserOptions): Parser | null {
     assertPlugins(plugins);
 
     const currentPluginIndex = getCurrentPluginIndex(plugins);
@@ -15,4 +15,6 @@ export default function ({ parser, plugins }: ParserOptions): Parser {
             return parentParser;
         }
     }
+
+    return null;
 }
