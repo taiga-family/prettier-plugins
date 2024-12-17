@@ -5,11 +5,11 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: taiga-family/ci/actions/setup/checkout@v1.55.5
-      - uses: taiga-family/ci/actions/setup/variables@v1.55.5
-      - uses: taiga-family/ci/actions/setup/node@v1.55.5
+      - uses: taiga-family/ci/actions/setup/checkout@v1.104.0
+      - uses: taiga-family/ci/actions/setup/variables@v1.104.0
+      - uses: taiga-family/ci/actions/setup/node@v1.104.0
       - run: npm run lint ${{ env.SUPPORT_AUTO_PUSH == 'true' && '-- --fix' || '' }}
-      - uses: taiga-family/ci/actions/auto/push@v1.55.5
+      - uses: taiga-family/ci/actions/auto/push@v1.104.0
         with:
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
