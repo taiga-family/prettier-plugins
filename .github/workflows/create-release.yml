@@ -25,12 +25,12 @@ jobs:
     env:
       IS_DRY_MODE: ${{ github.event.inputs.dryRun == 'true' }}
     steps:
-      - uses: taiga-family/ci/actions/setup/checkout@v1.55.5
+      - uses: taiga-family/ci/actions/setup/checkout@c9ef7dc7298d7382a98a9248feaf5aa3251d837e # v1.55.5
         with:
           fetch-depth: 0
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/node@v1.55.5
-      - uses: taiga-family/ci/actions/setup/config/git@v1.55.5
+      - uses: taiga-family/ci/actions/setup/node@c9ef7dc7298d7382a98a9248feaf5aa3251d837e # v1.55.5
+      - uses: taiga-family/ci/actions/setup/config/git@c9ef7dc7298d7382a98a9248feaf5aa3251d837e # v1.55.5
         with:
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
@@ -69,7 +69,7 @@ jobs:
           echo "${{ steps.get-pr-body.outputs.body }}"
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         if: ${{ env.IS_DRY_MODE == 'false' }}
         with:
           delete-branch: true
@@ -89,7 +89,7 @@ jobs:
 
       - name: Create GitHub Release
         if: ${{ env.IS_DRY_MODE == 'false' }}
-        uses: ncipollo/release-action@v1.14.0
+        uses: ncipollo/release-action@2c591bcc8ecdcd2db72b97d6147f871fcd833ba5 # v1.14.0
         with:
           name: Release ${{ steps.generate_body.outputs.tag_name }}
           tag: ${{ steps.generate_body.outputs.tag_name }}
